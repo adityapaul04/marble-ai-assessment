@@ -704,6 +704,47 @@ const LineChartComponent = ({ year2021, year2023, year2022 }: TStats) => {
               )}
             </div>
           ) : <></>}
+
+          <div className="p-3 m-1.5 mt-0 text-right">
+            {showChart ? (
+              <button
+                className="text-md text-white font-bold bg-blue-500 rounded-lg p-2"
+                onClick={openModal}
+              >
+                Select Date Range
+              </button>
+            ) : (
+              ""
+            )}
+
+            {/* Modal for Date Range Picker */}
+            <Modal
+              isOpen={showModal}
+              onRequestClose={closeModal}
+              contentLabel="Date Range Modal"
+              style={{
+                content: {
+                  zIndex: 10, // Custom z-index
+                  top: "55%",
+                  left: "50%",
+                  right: "auto",
+                  bottom: "auto",
+                  marginRight: "-50%",
+                  transform: "translate(-50%, -50%)", // Center modal
+                },
+              }}
+            >
+              <div className="flex justify-end">
+                <button className="text-xl p-3" onClick={closeModal}>
+                  X
+                </button>
+              </div>
+              <MonthRangePicker onChange={handleMonthRangeChange} />
+              <div className="flex justify-end">
+                <button onClick={submit}>Submit</button>
+              </div>
+            </Modal>
+          </div>
         </>
       )}
     </div>
