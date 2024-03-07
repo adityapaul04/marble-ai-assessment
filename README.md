@@ -45,7 +45,7 @@ To run the web application:
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
 3. Install dependencies using `npm install` or `yarn install`.
-4. Start the development server using `npm start` or `yarn start`.
+4. Start the development server using `npm run dev`.
 5. Access the application in your web browser at the specified URL.
 
 ## Notes:
@@ -53,16 +53,4 @@ To run the web application:
 Please refer to the documentation within the codebase for detailed explanations of implementation decisions, assumptions made, and additional instructions for running and using the web application.
 
 For any further inquiries or assistance, feel free to contact the repository owner.
-
-
-
-### Instructions:
-
-To run the web application:
-
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Install dependencies using `npm install` or `yarn install`.
-4. Start the development server using `npm start` or `yarn start`.
-5. Access the application in your web browser at the specified URL.
 
